@@ -6,8 +6,8 @@
       </div>
 
       <div class="nav-links">
-          <v-btn text large>Mon portfolio</v-btn>
-          <v-btn color="#6159CE" outlined rounded large>Travaillons ensemble</v-btn>
+          <v-btn text>Mon portfolio</v-btn>
+          <v-btn color="#6159CE" outlined rounded >Travaillons ensemble</v-btn>
       </div>
 
     </div>
@@ -28,7 +28,9 @@ export default {
     align-items: center;
     }
     .logo {
-
+      color: #6159CE;
+      width: 25rem;
+      text-align: center;
     }
     .nav-links {
     width: 25rem;
