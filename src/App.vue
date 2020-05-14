@@ -1,35 +1,32 @@
 <template>
-  <div id="app">
-    <div class="top-nav">
-      <h2 class="logo">
+  <div class="main">
 
-      </h2>
-      <div class="nav-links">
-        <v-btn flat>Mon travail</v-btn>
-        <v-btn outlined x-large>Travaillons ensemble !</v-btn>
-      </div>
-    </div>
+    <!-- Header Navbar -->
+    <TheHeaderNav />
+    
   </div>
 </template>
 
 <script>
-
+import TheHeaderNav from './components/TheHeaderNav'
 export default {
   name: 'App',
+
   components: {
-  }
-}
+    TheHeaderNav
+  },
+
+  data: () => ({
+    //
+  }),
+};
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital@1&display=swap');
 
-#app {
-  font-family: Jost, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.main {
+ font-family: 'Jost', sans-serif;
+ color: #6159CE;
 }
 </style>
